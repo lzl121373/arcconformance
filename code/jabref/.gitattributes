@@ -1,0 +1,15 @@
+# unix  line endings at unix files
+gradlew text eol=lf
+*.sh text eol=lf
+
+# windows line endings at windows files
+*.bat text eol=crlf
+
+# ensure that line endings of *.bib, *.fxml, *.java, *.properties are normalized to LF
+*.bib text eol=lf
+*.fxml text eol=lf
+*.java text eol=lf
+*.properties text eol=lf
+
+# disable after a release (otherwise, duplicate CHANGELOG.md entries will be generated)
+# CHANGELOG.md merge=union
